@@ -10,14 +10,17 @@ namespace Lojinha.Modelos
     {
         private int _codigo;
         public int Codigo
-        {  get { return _codigo; } 
-           set { _codigo = value; }
+        {
+            get { return _codigo; }
+            set { _codigo = value; }
+        }
 
         private string _nome;
-        public string Nome 
+        public string Nome
         {
             get { return _nome; }
             set { _nome = value; }
+        }
 
 
         private decimal _preco;
@@ -33,4 +36,6 @@ namespace Lojinha.Modelos
             get { return _estoque; }
             set { _estoque = value; }
         }
+    }
+}
 

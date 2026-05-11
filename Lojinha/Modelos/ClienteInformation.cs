@@ -37,4 +37,6 @@ namespace Lojinha.Modelos
         {
             get { return _telefone; }
             set { _telefone = value; }
-        }     
+        }
+    }
+}

@@ -17,7 +17,7 @@ namespace Lojinha.Modelos
         }
 
         private DateTime _data;
-        public  DateTime Data
+        public DateTime Data
         {
             get { return _data; }
             set { _data = value; }
@@ -46,3 +46,5 @@ namespace Lojinha.Modelos
             get { return _codigoProduto; }
             set { _codigoProduto = value; }
         }
+    }
+}
