@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Lojinha.Modelos;
-using System.Data
+using System.Data;
 namespace Lojinha.DAL
 {
     public class ClientesDAL
