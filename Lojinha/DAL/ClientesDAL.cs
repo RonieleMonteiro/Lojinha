@@ -151,10 +151,10 @@ namespace Lojinha.DAL
 
 
 		}
-        DataTable Listagem (String filtro)
+        public DataTable Listagem(string filtro)
         {
             //Conexão com o banco de dados
-            SqlConnection cn = new SqlConnection();
+            SqlConnection cn = new SqlConnection(Dados.StringConexao);
             try
             {
                 SqlCommand cmd = new SqlCommand();
