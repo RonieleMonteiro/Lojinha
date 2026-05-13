@@ -152,8 +152,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\ClientesBLL.cs" />
     <Compile Include="DAL\ClientesDAL.cs" />
     <Compile Include="DAL\Dados.cs" />
+    <Compile Include="DAL\ProdutosDAL.cs" />
     <Compile Include="Modelos\ClienteInformation.cs" />
     <Compile Include="Modelos\ProdutosInformation.cs" />
     <Compile Include="Modelos\VendasInformation.cs" />
@@ -184,7 +186,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
     <Folder Include="ScriptsSQL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
