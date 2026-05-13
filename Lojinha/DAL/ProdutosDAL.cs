@@ -194,5 +194,5 @@ namespace Lojinha.DAL
 
     }
 }	
-    }
-}
+    
+

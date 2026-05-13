@@ -38,5 +38,8 @@ namespace Lojinha.Modelos
             get { return _telefone; }
             set { _telefone = value; }
         }
+
+        public object Preco { get; internal set; }
+        public object Estoque { get; internal set; }
     }
 }

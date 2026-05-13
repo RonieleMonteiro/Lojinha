@@ -12,8 +12,8 @@ namespace Lojinha.DAL
 	{
 		public void Incluir(ClienteInformation cliente)
 		{
-			//Conexão com o banco de dados
-			SqlConnection cn = new SqlConnection();
+            //Conexão com o banco de dados
+            SqlConnection cn = new SqlConnection(Dados.StringConexao);
 			try
 			{
 				SqlCommand cmd = new SqlCommand();
@@ -47,13 +47,9 @@ namespace Lojinha.DAL
 			catch (SqlException ex)
 			{
 
-				throw new Exception("Erro ao acessar o banco de dados." + ex.Number);
+				throw new Exception("Erro ao acessar o banco de dados." + ex.Message.ToString());
 			}
-			catch
-			{
-				throw new Exception("Erro ao acessar o banco de dados.");
-
-			}
+			
 			finally
 			{
 				cn.Close();
@@ -63,8 +59,8 @@ namespace Lojinha.DAL
 		}
 		public void Alterar(ClienteInformation cliente)
 		{
-			//Conexão com o banco de dados
-			SqlConnection cn = new SqlConnection();
+          //Conexão com o banco de dados
+			SqlConnection cn = new SqlConnection(Dados.StringConexao);
 			try
 			{
 				SqlCommand cmd = new SqlCommand();

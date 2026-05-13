@@ -156,11 +156,20 @@
     <Compile Include="DAL\ClientesDAL.cs" />
     <Compile Include="DAL\Dados.cs" />
     <Compile Include="DAL\ProdutosDAL.cs" />
+    <Compile Include="Formularios\ClientesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ClientesForm.Designer.cs">
+      <DependentUpon>ClientesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modelos\ClienteInformation.cs" />
     <Compile Include="Modelos\ProdutosInformation.cs" />
     <Compile Include="Modelos\VendasInformation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\ClientesForm.resx">
+      <DependentUpon>ClientesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

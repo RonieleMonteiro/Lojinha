@@ -13,7 +13,9 @@ namespace Lojinha.DAL
         {
             get 
             {
-                return "Data Source=DESKTOP-PHMQ9A5\\MSSQLSERVER02;Initial Catalog=dblojinha;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+               // return @"Data Source=DESKTOP-PHMQ9A5//MSSQLSERVER02;Initial Catalog=dblojinha;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+
+                return @"Data Source=DESKTOP-PHMQ9A5\MSSQLSERVER02;Initial Catalog=dblojinha;Integrated Security=True;TrustServerCertificate=True";
 
             }
 
