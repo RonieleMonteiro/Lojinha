@@ -34,7 +34,6 @@ namespace Lojinha.BLL
             {
                 throw new Exception("O nome do cliente é obrigatório");
 
-
             }
             //Email é sempre em letras minúsculas 
             cliente.Email = cliente.Email.ToLower();

@@ -66,7 +66,7 @@ namespace Lojinha.DAL
 				SqlCommand cmd = new SqlCommand();
 				cmd.Connection = cn;
 				cmd.CommandType = CommandType.StoredProcedure;
-				cmd.CommandText = "alterar_cliente";
+				cmd.CommandText = "altera_cliente";
 				//Paramentros da Stored Procedure
 				SqlParameter pcodigo = new SqlParameter("@codigo", SqlDbType.Int);
 				pcodigo.Direction = ParameterDirection.Output;
@@ -93,7 +93,7 @@ namespace Lojinha.DAL
 			catch (SqlException ex)
 			{
 
-				throw new Exception("Erro ao acessar o banco de dados." + ex.Number);
+				throw new Exception("Erro ao acessar o banco de dados." + ex.Message.ToString());
 			}
 			catch
 			{

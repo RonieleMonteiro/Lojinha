@@ -81,7 +81,6 @@
             // 
             // codigoTextbox
             // 
-            this.codigoTextbox.Enabled = false;
             this.codigoTextbox.Location = new System.Drawing.Point(121, 29);
             this.codigoTextbox.Name = "codigoTextbox";
             this.codigoTextbox.Size = new System.Drawing.Size(100, 20);
@@ -127,6 +126,7 @@
             this.alterarButton.TabIndex = 9;
             this.alterarButton.Text = "Alterar";
             this.alterarButton.UseVisualStyleBackColor = true;
+            this.alterarButton.Click += new System.EventHandler(this.alterarButton_Click);
             // 
             // excluirButton
             // 
