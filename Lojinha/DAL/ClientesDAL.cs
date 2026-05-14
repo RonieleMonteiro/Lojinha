@@ -47,7 +47,7 @@ namespace Lojinha.DAL
 			catch (SqlException ex)
 			{
 
-				throw new Exception("Erro ao acessar o banco de dados." + ex.Message.ToString());
+                throw new Exception("Erro ao acessar o banco de dados." + ex.Message.ToString());
 			}
 			
 			finally
